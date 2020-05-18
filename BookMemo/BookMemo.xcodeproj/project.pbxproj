@@ -109,6 +109,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79BCC45B24734E2D001310FE /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				BC89908422CF556E00B4B511 /* BookListTableViewCell.swift */,
+				BC89908522CF556E00B4B511 /* BookListTableViewCell.xib */,
+				BCF9140322BCB4D9006723DF /* BookListViewController.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		79BCC45C24734E5C001310FE /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				BC4AECBA22E1A01C00C54504 /* ModalViewController.swift */,
+				BC4AECBB22E1A01C00C54504 /* ModalViewController.xib */,
+			);
+			path = ModalView;
+			sourceTree = "<group>";
+		};
+		79BCC45D24734E77001310FE /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				BCF9140522BCB4E8006723DF /* MemoListViewController.swift */,
+				BCF9140722BCB4F2006723DF /* MemoViewController.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		79BCC45E24734E89001310FE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BC89908822CF570100B4B511 /* 03SmartFontUI.ttf */,
+				BCD3056023168E61000BE3D1 /* Font Awesome 5 Free-Solid-900.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		BCF913C922BCB4B2006723DF = {
 			isa = PBXGroup;
 			children = (
@@ -134,19 +171,14 @@
 		BCF913D422BCB4B2006723DF /* BookMemo */ = {
 			isa = PBXGroup;
 			children = (
+				79BCC45E24734E89001310FE /* Font */,
+				79BCC45D24734E77001310FE /* Memo */,
+				79BCC45C24734E5C001310FE /* ModalView */,
+				79BCC45B24734E2D001310FE /* BookList */,
 				BCF913DC22BCB4B4006723DF /* Assets.xcassets */,
 				BCF913DE22BCB4B4006723DF /* LaunchScreen.storyboard */,
 				BCF913D922BCB4B2006723DF /* Main.storyboard */,
 				BCF913D522BCB4B2006723DF /* AppDelegate.swift */,
-				BCF9140322BCB4D9006723DF /* BookListViewController.swift */,
-				BCF9140522BCB4E8006723DF /* MemoListViewController.swift */,
-				BCF9140722BCB4F2006723DF /* MemoViewController.swift */,
-				BC89908422CF556E00B4B511 /* BookListTableViewCell.swift */,
-				BC89908522CF556E00B4B511 /* BookListTableViewCell.xib */,
-				BC89908822CF570100B4B511 /* 03SmartFontUI.ttf */,
-				BCD3056023168E61000BE3D1 /* Font Awesome 5 Free-Solid-900.otf */,
-				BC4AECBA22E1A01C00C54504 /* ModalViewController.swift */,
-				BC4AECBB22E1A01C00C54504 /* ModalViewController.xib */,
 				BCCAB43C22F0776200949BCF /* BookNameRealm.swift */,
 				BCD3055C2313B818000BE3D1 /* CustomTableView.swift */,
 				BCF913E122BCB4B4006723DF /* Info.plist */,
