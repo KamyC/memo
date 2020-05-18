@@ -12,7 +12,7 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
     var contentString = String()
     var memoNumber = Int()
     
-    //if new memo
+    //if it is new memo
     var isNewMemo = true
     
     override func viewDidLoad() {
