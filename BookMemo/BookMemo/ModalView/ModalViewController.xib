@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalViewController" customModule="BookMemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalViewController" customModule="Memo" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="o53-2D-mPe" id="wbJ-le-2pJ"/>
                 <outlet property="label" destination="xCo-zn-yDz" id="SnZ-w4-I40"/>
@@ -51,7 +51,7 @@
                         <constraint firstAttribute="width" constant="220" id="7NT-ge-hZq"/>
                         <constraint firstAttribute="height" constant="140" id="fgm-fC-Maj"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
