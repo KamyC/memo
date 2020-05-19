@@ -153,13 +153,29 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W4o-GX-yIY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GDg-ja-HSg"/>
+                    <navigationItem key="navigationItem" id="GDg-ja-HSg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="hT3-cK-JlZ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qUP-Ui-h7h">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneEditing:" destination="KR3-rl-Iw3" eventType="touchUpInside" id="wtX-T7-Icy"/>
+                                    <segue destination="THM-G7-Bhb" kind="unwind" identifier="unwindBack" unwindAction="unwindToMemoListVCWithSegue:" id="Q8n-Z5-It7"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="doneEdition:" destination="KR3-rl-Iw3" id="Wc9-wE-Zfg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textView" destination="Mee-fr-fuX" id="Ofa-ZF-djD"/>
                         <outlet property="titleTextField" destination="1vb-Qo-b12" id="gUK-re-mcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1W-Zy-FFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="THM-G7-Bhb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4586.25" y="32.74647887323944"/>
         </scene>

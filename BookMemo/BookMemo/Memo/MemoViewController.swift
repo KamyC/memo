@@ -83,8 +83,9 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
         textView.endEditing(true)
     }
     //unwind back to memo list
-    @IBAction func doneEdition(_ sender: Any) {
+  
+    @IBAction func doneEditing(_ sender: Any) {
         print("works")
-        performSegue(withIdentifier: "unwindBack", sender: self)
+         performSegue(withIdentifier: "unwindBack", sender: self)
     }
 }
