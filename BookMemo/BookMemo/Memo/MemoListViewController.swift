@@ -104,7 +104,18 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         self.transformAnimation(view: addMemoButton)
         if !isNewMemoEmpty {
             let memo = Memo()
-            memo.title = newMemoTitle
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            dateFormatter.timeStyle = .none
+             
+            let date = Date()
+             
+            // US English Locale (en_US)
+            dateFormatter.locale = Locale(identifier: "en_US")
+            let convertedDate = dateFormatter.string(from: date)
+            
+            memo.title = newMemoTitle + "    " + convertedDate
             memo.content = newMemoContent
             do {
                 let realm = try Realm()
