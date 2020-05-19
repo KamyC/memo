@@ -17,11 +17,15 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background2.png")
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         
         navigationController?.delegate = self
 
         textView.text = contentString
-        textView.font = UIFont(name: "Misty Black", size: 16)
+//        textView.font = UIFont(name: "Misty Black", size: 16)
 //        textView.font = UIFont(name: "03SmartFontUI", size: 16)
 
         
@@ -35,7 +39,7 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
         buttomLine.frame = CGRect(x: 0, y: titleTextField.frame.size.height * 0.9,
                                   width: titleTextField.frame.size.width, height: 1)
         titleTextField.layer.addSublayer(buttomLine)
-        titleTextField.textColor = .white
+//        titleTextField.textColor = .white
         
         if navigationItem.title != nil{
             titleString = navigationItem.title!

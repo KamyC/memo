@@ -11,6 +11,9 @@
 		2CB2AC928C1076D998B9CBA4 /* Pods_BookMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7FBB1215397BFF26174B85 /* Pods_BookMemoUITests.framework */; };
 		ABCB13932473A949008D2237 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13922473A949008D2237 /* .gitignore */; };
 		ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13962473C028008D2237 /* Misty Black.ttf */; };
+		ABCB13992473C807008D2237 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13982473C806008D2237 /* background.png */; };
+		ABCB139D2473CC11008D2237 /* textBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCB139C2473CC10008D2237 /* textBackground.png */; };
+		ABCB139F2473CC6E008D2237 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCB139E2473CC6E008D2237 /* background2.png */; };
 		BC4AECBC22E1A01C00C54504 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4AECBA22E1A01C00C54504 /* ModalViewController.swift */; };
 		BC4AECBD22E1A01C00C54504 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4AECBB22E1A01C00C54504 /* ModalViewController.xib */; };
 		BC89908622CF556E00B4B511 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC89908422CF556E00B4B511 /* BookListTableViewCell.swift */; };
@@ -57,6 +60,9 @@
 		A0F08FD7F577FED99242E27C /* Pods-BookMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMemoTests/Pods-BookMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABCB13922473A949008D2237 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ABCB13962473C028008D2237 /* Misty Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Misty Black.ttf"; sourceTree = "<group>"; };
+		ABCB13982473C806008D2237 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		ABCB139C2473CC10008D2237 /* textBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textBackground.png; sourceTree = "<group>"; };
+		ABCB139E2473CC6E008D2237 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		BC4AECBA22E1A01C00C54504 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		BC4AECBB22E1A01C00C54504 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		BC89908422CF556E00B4B511 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 		79BCC45D24734E77001310FE /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				ABCB13982473C806008D2237 /* background.png */,
+				ABCB139E2473CC6E008D2237 /* background2.png */,
+				ABCB139C2473CC10008D2237 /* textBackground.png */,
 				BCF9140522BCB4E8006723DF /* MemoListViewController.swift */,
 				BCF9140722BCB4F2006723DF /* MemoViewController.swift */,
 			);
@@ -341,8 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCB139D2473CC11008D2237 /* textBackground.png in Resources */,
 				ABCB13932473A949008D2237 /* .gitignore in Resources */,
+				ABCB13992473C807008D2237 /* background.png in Resources */,
 				BC89908722CF556E00B4B511 /* BookListTableViewCell.xib in Resources */,
+				ABCB139F2473CC6E008D2237 /* background2.png in Resources */,
 				BCF913E022BCB4B4006723DF /* LaunchScreen.storyboard in Resources */,
 				BC4AECBD22E1A01C00C54504 /* ModalViewController.xib in Resources */,
 				ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */,
