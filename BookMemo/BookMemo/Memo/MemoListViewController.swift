@@ -10,6 +10,9 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
     @IBOutlet var addMemoButton : UIButton!
     @IBOutlet var searchBar : UISearchBar!
     
+    @IBAction func doneSearchButton(_ sender: Any) {
+        self.view.endEditing(false)
+    }
     //navigationBar title
     var titleString = String()
     //

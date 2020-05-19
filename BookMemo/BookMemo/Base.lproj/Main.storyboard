@@ -40,7 +40,7 @@
                                 </state>
                             </button>
                             <searchBar contentMode="redraw" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csr-53-G9F">
-                                <rect key="frame" x="0.0" y="0.0" width="263" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.091022394600000001" green="0.37168669700000001" blue="0.19056189060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -99,13 +99,28 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuO-VZ-nhE">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.091022394600000001" green="0.37168669700000001" blue="0.19056189060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ6-Kg-K8B">
+                                <rect key="frame" x="275" y="12" width="36" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.98410767316818237" green="0.97264212369918823" blue="0.95299237966537476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G97-d3-kCv"/>
+                                    <action selector="doneSearchButton:" destination="Rlk-4z-Kel" eventType="touchUpInside" id="y7G-2e-cRg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.091022394597530365" green="0.37168669700622559" blue="0.19056189060211182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cvM-ZW-UoP" firstAttribute="trailing" secondItem="TJ6-Kg-K8B" secondAttribute="trailing" constant="9" id="XM1-pL-0Hp"/>
+                            <constraint firstItem="TJ6-Kg-K8B" firstAttribute="top" secondItem="cvM-ZW-UoP" secondAttribute="top" constant="12" id="uTs-79-j1l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cvM-ZW-UoP"/>
                     </view>
                     <navigationItem key="navigationItem" id="bRS-k2-oxR">
