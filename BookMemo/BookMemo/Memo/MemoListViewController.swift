@@ -48,6 +48,20 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         reset()
     }
+    fileprivate func transformAnimation(view:UIView) {
+           let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+
+           animation.fromValue = 0
+           animation.toValue = Double.pi/2
+           animation.duration = 0.2
+           animation.autoreverses = false
+
+           animation.isRemovedOnCompletion = true
+           animation.fillMode = CAMediaTimingFillMode.forwards
+           animation.repeatCount = 1
+
+           view.layer.add(animation, forKey: nil)
+   }
     
     @objc func returnView() {
         self.dismiss(animated: true, completion: nil)
@@ -87,6 +101,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
     }
     
     func addMemo() {
+        self.transformAnimation(view: addMemoButton)
         if !isNewMemoEmpty {
             let memo = Memo()
             memo.title = newMemoTitle

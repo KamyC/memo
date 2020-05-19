@@ -11,7 +11,7 @@
         <!--Home Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BookListViewController" customModule="BookMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BookListViewController" customModule="Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.091022394600000001" green="0.37168669700000001" blue="0.19056189060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="hpc-XC-D4A" customClass="BookListTableViewCell" customModule="BookMemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="hpc-XC-D4A" customClass="BookListTableViewCell" customModule="Memo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hpc-XC-D4A" id="m2F-wl-4RQ">
@@ -64,7 +64,7 @@
         <!--Memo List View Controller-->
         <scene sceneID="YJ7-JP-Q5M">
             <objects>
-                <viewController id="Rlk-4z-Kel" customClass="MemoListViewController" customModule="BookMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rlk-4z-Kel" customClass="MemoListViewController" customModule="Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kIW-Ll-rWY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,22 +90,25 @@
                                 <color key="barTintColor" red="0.091022394600000001" green="0.37168669700000001" blue="0.19056189060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-Uv-8aB">
-                                <rect key="frame" x="240" y="420" width="60" height="60"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.091022394597530365" green="0.37168669700622559" blue="0.19056189060211182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cvM-ZW-UoP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bRS-k2-oxR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xb8-hT-i73">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PhM-Uv-8aB">
+                                <rect key="frame" x="249" y="0.5" width="55" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90588235289999997" green="0.85098039219999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="＋">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="KR3-rl-Iw3" kind="show" id="EQy-wQ-Ner"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.091022394597530365" green="0.37168669700622559" blue="0.19056189060211182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="cvM-ZW-UoP"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bRS-k2-oxR"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addMemoButton" destination="PhM-Uv-8aB" id="4Ai-f1-w1v"/>
                         <outlet property="searchBar" destination="HuO-VZ-nhE" id="5Bz-XL-2Y3"/>
@@ -120,7 +123,7 @@
         <!--Memo View Controller-->
         <scene sceneID="YOr-7H-eM8">
             <objects>
-                <viewController id="KR3-rl-Iw3" customClass="MemoViewController" customModule="BookMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KR3-rl-Iw3" customClass="MemoViewController" customModule="Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ntD-zi-a3y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +146,7 @@
                         <color key="backgroundColor" red="0.091022394600000001" green="0.37168669700000001" blue="0.19056189060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="W4o-GX-yIY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GDg-ja-HSg"/>
                     <connections>
                         <outlet property="textView" destination="Mee-fr-fuX" id="Ofa-ZF-djD"/>
                         <outlet property="titleTextField" destination="1vb-Qo-b12" id="gUK-re-mcg"/>
