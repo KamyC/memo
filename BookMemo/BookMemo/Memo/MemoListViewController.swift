@@ -31,6 +31,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //delegate and dataSource
         table.delegate = self
         table.dataSource = self
@@ -45,7 +46,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         searchBar.backgroundImage = UIImage()
         navigationController?.navigationBar.shadowImage = UIImage()
-
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "background.png")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
@@ -109,6 +110,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         performSegue(withIdentifier: "toMemoDetail", sender: nil)
         table.deselectRow(at: indexPath, animated: true)
     }
+    
     //add memo and link to segue
     func addMemo() {
         self.transformAnimation(view: addMemoButton)
