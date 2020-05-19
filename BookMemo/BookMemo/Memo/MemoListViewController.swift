@@ -5,7 +5,7 @@ import RealmSwift
 
 class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate{
 
-    //Outlet
+    
     @IBOutlet var table : UITableView!
     @IBOutlet var addMemoButton : UIButton!
     @IBOutlet var searchBar : UISearchBar!
@@ -15,23 +15,24 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
     }
     //navigationBar title
     var titleString = String()
-    //
+    //new memo
     var newMemoTitle = String()
     var newMemoContent = String()
-    //
+    // current memo
     var memoTitle = String()
     var memoContent = String()
     var memoNumber = Int()
-    //
+    // book number
     var bookNumber = Int()
-    //Memo
+    //Memo is empty?
     var isNewMemoEmpty = Bool()
-    //
+    
     var searchData = [(String,Int)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //delegate dataSource
+        
+        //delegate and dataSource
         table.delegate = self
         table.dataSource = self
         searchBar.delegate = self
@@ -45,7 +46,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         searchBar.backgroundImage = UIImage()
         navigationController?.navigationBar.shadowImage = UIImage()
-
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "background.png")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
@@ -56,6 +57,8 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         reset()
     }
+    
+    //add animation for plus button
     fileprivate func transformAnimation(view:UIView) {
            let animation = CABasicAnimation(keyPath: "transform.rotation.z")
 
@@ -90,7 +93,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         return 60.0
     }
     
-    //cell
+    //remove cell
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         self.delete(index: searchData[indexPath.row].1)
         searchData.remove(at: indexPath.row)
@@ -108,6 +111,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         table.deselectRow(at: indexPath, animated: true)
     }
     
+    //add memo and link to segue
     func addMemo() {
         self.transformAnimation(view: addMemoButton)
         if !isNewMemoEmpty {
@@ -152,7 +156,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
                     book.memos[memoNumber].content = newMemoContent
                 }
             } catch {
-                
+                print("")
             }
             reset()
             table.reloadData()
@@ -167,7 +171,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
                 book.memos.remove(at: index)
             }
         } catch {
-            
+            print("no item to be deleted")
         }
     }
     
@@ -175,11 +179,11 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         let memoViewController = segue.destination as! MemoViewController
         if segue.identifier == "toMemoDetail" {
             memoViewController.navigationItem.title = self.memoTitle
-            memoViewController.contentString = self.memoContent
+            memoViewController.content = self.memoContent
             memoViewController.memoNumber = self.memoNumber
             memoViewController.isNewMemo = false
         } else {
-            memoViewController.contentString = ""
+            memoViewController.content = ""
             memoViewController.isNewMemo = true
         }
     }
@@ -216,6 +220,7 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
             searchData.append((memos[i].title,i))
         }
     }
-
-
+    
+    //for unwind action
+    @IBAction func unwindToMemoListVC(segue:UIStoryboardSegue) { }
 }

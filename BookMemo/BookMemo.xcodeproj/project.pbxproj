@@ -187,9 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				79BCC45E24734E89001310FE /* Font */,
+				79BCC45B24734E2D001310FE /* BookList */,
 				79BCC45D24734E77001310FE /* Memo */,
 				79BCC45C24734E5C001310FE /* ModalView */,
-				79BCC45B24734E2D001310FE /* BookList */,
 				BCF913DC22BCB4B4006723DF /* Assets.xcassets */,
 				BCF913DE22BCB4B4006723DF /* LaunchScreen.storyboard */,
 				BCF913D922BCB4B2006723DF /* Main.storyboard */,
