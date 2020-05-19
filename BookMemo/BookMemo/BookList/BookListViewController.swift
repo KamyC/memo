@@ -11,20 +11,20 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
     @IBOutlet var table : UITableView!
     @IBOutlet var addCellButton : UIButton!
     @IBOutlet var searchBar : UISearchBar!
-    //
+    
     var newBook = String()
-    //
+    
     var titleText = String()
     //ModalView
     let modalView = ModalViewController(nibName: "ModalViewController", bundle: nil) as UIViewController
-    //
+    
     var bookNumber = Int()
-    //
+    
     var searchData = [(String,Int)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //delegateとdataSource
+        //delegate and dataSource
         table.delegate = self
         table.dataSource = self
         searchBar.delegate = self
@@ -52,7 +52,7 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
         reset()
     }
     
-    //
+    
     @objc func presentModal() {
         //background
         let overlayAppearance = PopupDialogOverlayView.appearance()
@@ -80,12 +80,12 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
         return customCell
     }
     
-    //cell height
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60.0
-    }
+//    //cell height
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 60.0
+//    }
     
-    //cell
+    //cell click to segue
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         titleText = searchData[indexPath.row].0
         bookNumber = searchData[indexPath.row].1
@@ -117,7 +117,7 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
                 realm.add(book)
             }
         } catch {
-            
+            print("fail to add book to realm")
         }
 //        table.reloadData()
         self.search(searchBar)
@@ -131,7 +131,7 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
                 realm.delete(books[index])
             }
         } catch {
-            
+            print("fail to delete")
         }
     }
     

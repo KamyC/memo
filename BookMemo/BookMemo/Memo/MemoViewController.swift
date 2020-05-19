@@ -9,7 +9,7 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet var textView : UITextView!
     //navigationBar
     var titleString = "No Title"
-    var contentString = String()
+    var content = String()
     var memoNumber = Int()
     
     //if it is new memo
@@ -20,7 +20,7 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
         
         navigationController?.delegate = self
 
-        textView.text = contentString
+        textView.text = content
         textView.font = UIFont(name: "03SmartFontUI", size: 16)
         
         navigationItem.largeTitleDisplayMode = .never
@@ -76,6 +76,9 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
         titleTextField.endEditing(true)
         textView.endEditing(true)
     }
-
-
+    //unwind back to memo list
+    @IBAction func doneEdition(_ sender: Any) {
+        print("works")
+        performSegue(withIdentifier: "unwindBack", sender: self)
+    }
 }

@@ -18,7 +18,7 @@ class ModalViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        //
+        
         label.font = UIFont(name: "03SmartFontUI", size: label.frame.size.height * 0.65)
         button.titleLabel?.font = UIFont(name: "03SmartFontUI", size: 17)
         textField.font = UIFont(name: "03SmartFontUI", size: textField.frame.size.height * 0.4)
@@ -36,7 +36,7 @@ class ModalViewController: UIViewController {
 
     //button
     @objc func pushOK() {
-        //
+        
         self.dismiss(animated: true, completion: nil)
         //view
         let navigationController = self.presentingViewController as! UINavigationController
