@@ -11,6 +11,10 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
     @IBOutlet var table : UITableView!
     @IBOutlet var addCellButton : UIButton!
     @IBOutlet var searchBar : UISearchBar!
+    
+    @IBAction func DoneButton(_ sender: Any) {
+        self.view.endEditing(false)
+    }
     //
     var newBook = String()
     //

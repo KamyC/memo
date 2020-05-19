@@ -40,13 +40,27 @@
                                 </state>
                             </button>
                             <searchBar contentMode="redraw" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csr-53-G9F">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="263" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.091022394600000001" green="0.37168669700000001" blue="0.19056189060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuj-SW-bEv">
+                                <rect key="frame" x="280" y="12" width="36" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.98410767316818237" green="0.97264212369918823" blue="0.95299237966537476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VxJ-b5-9R3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.37254901960784315" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cuj-SW-bEv" secondAttribute="trailing" constant="4" id="8Yw-Sa-cSn"/>
+                            <constraint firstItem="cuj-SW-bEv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="rrY-PM-7h2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Page" id="bOF-5o-Cpo"/>
