@@ -12,6 +12,10 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
     @IBOutlet var addCellButton : UIButton!
     @IBOutlet var searchBar : UISearchBar!
     
+    @IBAction func DoneButton(_ sender: Any) {
+        self.view.endEditing(false)
+    }
+    //
     var newBook = String()
     
     var titleText = String()
@@ -31,7 +35,7 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         //UI
         addCellButton.layer.cornerRadius = 30
-        addCellButton.titleLabel?.font = UIFont(name: "03SmartFontUI", size: 40)
+//        addCellButton.titleLabel?.font = UIFont(name: "03SmartFontUI", size: 40)
         table.tableFooterView = UIView()
         
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -44,6 +48,11 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
         searchBar.backgroundImage = UIImage()
         navigationController?.navigationBar.shadowImage = UIImage()
                 
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background.png")
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        
         //cell
         table.register(UINib(nibName: "BookListTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         //ButtonAction

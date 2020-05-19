@@ -51,7 +51,7 @@
                         <constraint firstAttribute="width" constant="220" id="7NT-ge-hZq"/>
                         <constraint firstAttribute="height" constant="140" id="fgm-fC-Maj"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>

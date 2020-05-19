@@ -10,6 +10,9 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
     @IBOutlet var addMemoButton : UIButton!
     @IBOutlet var searchBar : UISearchBar!
     
+    @IBAction func doneSearchButton(_ sender: Any) {
+        self.view.endEditing(false)
+    }
     //navigationBar title
     var titleString = String()
     //new memo
@@ -43,6 +46,11 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         searchBar.backgroundImage = UIImage()
         navigationController?.navigationBar.shadowImage = UIImage()
 
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background.png")
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        
         //cell
         table.register(UINib(nibName: "BookListTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         
@@ -106,7 +114,18 @@ class MemoListViewController: UIViewController,UITableViewDelegate, UITableViewD
         self.transformAnimation(view: addMemoButton)
         if !isNewMemoEmpty {
             let memo = Memo()
-            memo.title = newMemoTitle
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            dateFormatter.timeStyle = .none
+             
+            let date = Date()
+             
+            // US English Locale (en_US)
+            dateFormatter.locale = Locale(identifier: "en_US")
+            let convertedDate = dateFormatter.string(from: date)
+            
+            memo.title = newMemoTitle + "    " + convertedDate
             memo.content = newMemoContent
             do {
                 let realm = try Realm()
