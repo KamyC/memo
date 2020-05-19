@@ -10,6 +10,7 @@
 		1E7A8E392DE30988D6243C12 /* Pods_BookMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF686224A6467CA21AB01F99 /* Pods_BookMemo.framework */; };
 		2CB2AC928C1076D998B9CBA4 /* Pods_BookMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7FBB1215397BFF26174B85 /* Pods_BookMemoUITests.framework */; };
 		ABCB13932473A949008D2237 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13922473A949008D2237 /* .gitignore */; };
+		ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13962473C028008D2237 /* Misty Black.ttf */; };
 		BC4AECBC22E1A01C00C54504 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4AECBA22E1A01C00C54504 /* ModalViewController.swift */; };
 		BC4AECBD22E1A01C00C54504 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4AECBB22E1A01C00C54504 /* ModalViewController.xib */; };
 		BC89908622CF556E00B4B511 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC89908422CF556E00B4B511 /* BookListTableViewCell.swift */; };
@@ -55,6 +56,7 @@
 		8B7FBB1215397BFF26174B85 /* Pods_BookMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F08FD7F577FED99242E27C /* Pods-BookMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMemoTests/Pods-BookMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABCB13922473A949008D2237 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ABCB13962473C028008D2237 /* Misty Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Misty Black.ttf"; sourceTree = "<group>"; };
 		BC4AECBA22E1A01C00C54504 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		BC4AECBB22E1A01C00C54504 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		BC89908422CF556E00B4B511 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				BC89908822CF570100B4B511 /* 03SmartFontUI.ttf */,
+				ABCB13962473C028008D2237 /* Misty Black.ttf */,
 				BCD3056023168E61000BE3D1 /* Font Awesome 5 Free-Solid-900.otf */,
 			);
 			path = Font;
@@ -342,6 +345,7 @@
 				BC89908722CF556E00B4B511 /* BookListTableViewCell.xib in Resources */,
 				BCF913E022BCB4B4006723DF /* LaunchScreen.storyboard in Resources */,
 				BC4AECBD22E1A01C00C54504 /* ModalViewController.xib in Resources */,
+				ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */,
 				BC89908922CF570100B4B511 /* 03SmartFontUI.ttf in Resources */,
 				BCF913DD22BCB4B4006723DF /* Assets.xcassets in Resources */,
 				BCF913DB22BCB4B2006723DF /* Main.storyboard in Resources */,

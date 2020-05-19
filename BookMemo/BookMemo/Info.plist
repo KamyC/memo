@@ -24,6 +24,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>mainTextFont.ttf</string>
 		<string>03SmartFontUI.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

@@ -21,11 +21,13 @@ class MemoViewController: UIViewController, UINavigationControllerDelegate {
         navigationController?.delegate = self
 
         textView.text = contentString
-        textView.font = UIFont(name: "03SmartFontUI", size: 16)
+        textView.font = UIFont(name: "Misty Black", size: 16)
+//        textView.font = UIFont(name: "03SmartFontUI", size: 16)
+
         
         navigationItem.largeTitleDisplayMode = .never
         
-        titleTextField.font = UIFont(name: "03SmartFontUI", size: 20)
+//        titleTextField.font = UIFont(name: "03SmartFontUI", size: 20)
         
         let buttomLine = CALayer()
         buttomLine.borderWidth = CGFloat(2.0)

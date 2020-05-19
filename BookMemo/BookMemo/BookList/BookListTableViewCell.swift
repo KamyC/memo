@@ -8,7 +8,7 @@ class BookListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        bookNameLabel.font = UIFont(name: "03SmartFontUI", size: 22)
+//        bookNameLabel.font = UIFont(name: "03SmartFontUI", size: 15)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

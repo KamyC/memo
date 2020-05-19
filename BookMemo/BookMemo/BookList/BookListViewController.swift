@@ -35,7 +35,7 @@ class BookListViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         //UI
         addCellButton.layer.cornerRadius = 30
-        addCellButton.titleLabel?.font = UIFont(name: "03SmartFontUI", size: 40)
+//        addCellButton.titleLabel?.font = UIFont(name: "03SmartFontUI", size: 40)
         table.tableFooterView = UIView()
         
         navigationController?.navigationBar.prefersLargeTitles = true
