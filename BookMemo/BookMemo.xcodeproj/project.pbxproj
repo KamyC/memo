@@ -15,6 +15,8 @@
 		79BCC46924750CAF001310FE /* GTAlertCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCC46824750CAF001310FE /* GTAlertCollection.swift */; };
 		79BCC46B24750DD6001310FE /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCC46A24750DD6001310FE /* LanguagesViewController.swift */; };
 		79BCC46D24750E39001310FE /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCC46C24750E39001310FE /* TranslationViewController.swift */; };
+		79BCC47024750EE7001310FE /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCC46F24750EE7001310FE /* LanguageCell.swift */; };
+		79BCC47224751913001310FE /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BCC47124751913001310FE /* LanguageCell.xib */; };
 		ABCB13932473A949008D2237 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13922473A949008D2237 /* .gitignore */; };
 		ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13962473C028008D2237 /* Misty Black.ttf */; };
 		ABCB13992473C807008D2237 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13982473C806008D2237 /* background.png */; };
@@ -68,6 +70,8 @@
 		79BCC46824750CAF001310FE /* GTAlertCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTAlertCollection.swift; sourceTree = "<group>"; };
 		79BCC46A24750DD6001310FE /* LanguagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		79BCC46C24750E39001310FE /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		79BCC46F24750EE7001310FE /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
+		79BCC47124751913001310FE /* LanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCell.xib; sourceTree = "<group>"; };
 		8B7FBB1215397BFF26174B85 /* Pods_BookMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F08FD7F577FED99242E27C /* Pods-BookMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMemoTests/Pods-BookMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABCB13922473A949008D2237 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -199,6 +203,15 @@
 			path = GTAlertCollection;
 			sourceTree = "<group>";
 		};
+		79BCC46E24750EBB001310FE /* LanguageCell */ = {
+			isa = PBXGroup;
+			children = (
+				79BCC46F24750EE7001310FE /* LanguageCell.swift */,
+				79BCC47124751913001310FE /* LanguageCell.xib */,
+			);
+			path = LanguageCell;
+			sourceTree = "<group>";
+		};
 		BCF913C922BCB4B2006723DF = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +238,7 @@
 		BCF913D422BCB4B2006723DF /* BookMemo */ = {
 			isa = PBXGroup;
 			children = (
+				79BCC46E24750EBB001310FE /* LanguageCell */,
 				79BCC46724750C96001310FE /* GTAlertCollection */,
 				79BCC46424750C41001310FE /* TranslatorViewController */,
 				79BCC45F24750410001310FE /* TranslationManager */,
@@ -352,7 +366,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "芝本　将豊";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					BCF913D122BCB4B2006723DF = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -397,6 +411,7 @@
 				ABCB13992473C807008D2237 /* background.png in Resources */,
 				BC89908722CF556E00B4B511 /* BookListTableViewCell.xib in Resources */,
 				ABCB139F2473CC6E008D2237 /* background2.png in Resources */,
+				79BCC47224751913001310FE /* LanguageCell.xib in Resources */,
 				BCF913E022BCB4B4006723DF /* LaunchScreen.storyboard in Resources */,
 				BC4AECBD22E1A01C00C54504 /* ModalViewController.xib in Resources */,
 				ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */,
@@ -517,6 +532,7 @@
 				BCAF229E22FEC0CB0000D52D /* MemoViewController.swift in Sources */,
 				BC89908622CF556E00B4B511 /* BookListTableViewCell.swift in Sources */,
 				BCF913D622BCB4B2006723DF /* AppDelegate.swift in Sources */,
+				79BCC47024750EE7001310FE /* LanguageCell.swift in Sources */,
 				BCF9140422BCB4D9006723DF /* BookListViewController.swift in Sources */,
 				79BCC46624750C78001310FE /* EditorViewController.swift in Sources */,
 				79BCC46924750CAF001310FE /* GTAlertCollection.swift in Sources */,

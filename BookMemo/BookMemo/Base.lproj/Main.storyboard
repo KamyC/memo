@@ -3,7 +3,7 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -149,6 +149,24 @@
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV7-wV-HkG">
+                                <rect key="frame" x="241" y="471" width="79" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="translate:" destination="THM-G7-Bhb" eventType="touchUpInside" id="KVL-Dr-hn5"/>
+                                    <action selector="translate:" destination="KR3-rl-Iw3" eventType="touchUpInside" id="xuz-2i-jxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXg-QH-ssi">
+                                <rect key="frame" x="16" y="438" width="118" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Detect Language"/>
+                                <connections>
+                                    <action selector="detectLanguage:" destination="THM-G7-Bhb" eventType="touchUpInside" id="Fdw-mh-JS7"/>
+                                    <action selector="detectLanguage:" destination="KR3-rl-Iw3" eventType="touchUpInside" id="VcG-gf-U3j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W4o-GX-yIY"/>
@@ -172,6 +190,7 @@
                     <connections>
                         <outlet property="textView" destination="Mee-fr-fuX" id="Ofa-ZF-djD"/>
                         <outlet property="titleTextField" destination="1vb-Qo-b12" id="gUK-re-mcg"/>
+                        <segue destination="Ud9-ro-gsC" kind="show" id="720-md-Je6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1W-Zy-FFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,9 +220,44 @@
             </objects>
             <point key="canvasLocation" x="1642.5" y="32.74647887323944"/>
         </scene>
+        <!--Languages View Controller-->
+        <scene sceneID="N0A-9G-oN8">
+            <objects>
+                <viewController id="Ud9-ro-gsC" customClass="LanguagesViewController" customModule="Memo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRK-BV-AaE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zoJ-0Y-iIk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i9Y-R7-0K2"/>
+                    <connections>
+                        <segue destination="dYk-zd-d8o" kind="show" id="DY4-P0-GHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjr-Et-Mhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5359" y="33"/>
+        </scene>
+        <!--Translation View Controller-->
+        <scene sceneID="v37-ok-cpI">
+            <objects>
+                <viewController id="dYk-zd-d8o" customClass="TranslationViewController" customModule="Memo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C9a-bZ-Mn5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bOs-ir-iNV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Rv-4w-hbI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iv8-1e-XAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6180" y="33"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2kN-pl-mJn"/>
+        <segue reference="EQy-wQ-Ner"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="pencil" catalog="system" width="128" height="113"/>
