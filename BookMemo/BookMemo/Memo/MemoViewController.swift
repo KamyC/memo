@@ -1,9 +1,6 @@
-
-
 import UIKit
 
 class MemoViewController: UIViewController, UINavigationControllerDelegate {
-
     //Outlet
     @IBOutlet var titleTextField : UITextField!
     @IBOutlet var textView : UITextView!
