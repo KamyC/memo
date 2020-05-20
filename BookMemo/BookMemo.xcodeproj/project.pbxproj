@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E7A8E392DE30988D6243C12 /* Pods_BookMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF686224A6467CA21AB01F99 /* Pods_BookMemo.framework */; };
 		2CB2AC928C1076D998B9CBA4 /* Pods_BookMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7FBB1215397BFF26174B85 /* Pods_BookMemoUITests.framework */; };
-		79BCC4612475044C001310FE /* TranslationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCC4602475044C001310FE /* TranslationManager.swift */; };
-		79BCC46324750B77001310FE /* TranslationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCC46224750B77001310FE /* TranslationAPI.swift */; };
 		ABCB13932473A949008D2237 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13922473A949008D2237 /* .gitignore */; };
 		ABCB13972473C029008D2237 /* Misty Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13962473C028008D2237 /* Misty Black.ttf */; };
 		ABCB13992473C807008D2237 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCB13982473C806008D2237 /* background.png */; };
@@ -58,8 +56,6 @@
 		14DF49C737F59D5CC5C0FABE /* Pods-BookMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookMemoUITests/Pods-BookMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C8A0C3699649900A23DA2B5 /* Pods-BookMemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookMemoTests/Pods-BookMemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		388B0F79AB5271739606083E /* Pods_BookMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79BCC4602475044C001310FE /* TranslationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationManager.swift; sourceTree = "<group>"; };
-		79BCC46224750B77001310FE /* TranslationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAPI.swift; sourceTree = "<group>"; };
 		8B7FBB1215397BFF26174B85 /* Pods_BookMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F08FD7F577FED99242E27C /* Pods-BookMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMemoTests/Pods-BookMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABCB13922473A949008D2237 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -164,15 +160,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		79BCC45F24750410001310FE /* TranslationManager */ = {
-			isa = PBXGroup;
-			children = (
-				79BCC4602475044C001310FE /* TranslationManager.swift */,
-				79BCC46224750B77001310FE /* TranslationAPI.swift */,
-			);
-			path = TranslationManager;
-			sourceTree = "<group>";
-		};
 		BCF913C922BCB4B2006723DF = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +186,6 @@
 		BCF913D422BCB4B2006723DF /* BookMemo */ = {
 			isa = PBXGroup;
 			children = (
-				79BCC45F24750410001310FE /* TranslationManager */,
 				79BCC45E24734E89001310FE /* Font */,
 				79BCC45B24734E2D001310FE /* BookList */,
 				79BCC45D24734E77001310FE /* Memo */,
@@ -490,11 +476,9 @@
 				BC89908622CF556E00B4B511 /* BookListTableViewCell.swift in Sources */,
 				BCF913D622BCB4B2006723DF /* AppDelegate.swift in Sources */,
 				BCF9140422BCB4D9006723DF /* BookListViewController.swift in Sources */,
-				79BCC4612475044C001310FE /* TranslationManager.swift in Sources */,
 				BCCAB43D22F0776200949BCF /* BookNameRealm.swift in Sources */,
 				BC4AECBC22E1A01C00C54504 /* ModalViewController.swift in Sources */,
 				BCD3055D2313B818000BE3D1 /* CustomTableView.swift in Sources */,
-				79BCC46324750B77001310FE /* TranslationAPI.swift in Sources */,
 				BCF9140622BCB4E8006723DF /* MemoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
